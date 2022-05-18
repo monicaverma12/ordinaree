@@ -13,7 +13,7 @@ if st.button("Click to get result"):
     clf = joblib.load("No_of_Orders_predictor.pkl")
 
     # Get prediction
-    prediction = clf.predict([Sale])[0]
+    prediction = clf.predict([[Sale]])[0]
 
     # Output prediction
-    st.text(f"Total no of orders woould be : {prediction}")
+    st.text(f"Total no of orders would be : {prediction}")
